@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fylo data storage component - Frontend Mentor Challenge - Solution by Viet An</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<h1 class="sr-only">Fylo data storage component - Frontend Mentor Challenge - Solution by Viet An</h1>
+			<article id="menu">
+				<h2 class="sr-only">Fylo menu</h2>
+				<img id="logo" src="images/logo.svg" alt="Fylo" />
+				<ul id="icons-row">
+					<li><img class="icon" src="images/icon-document.svg" alt="Documents" /></li>
+					<li><img class="icon" src="images/icon-folder.svg" alt="Folders" /></li>
+					<li><img class="icon" src="images/icon-upload.svg" alt="icon-upload" /></li>
+				</ul>
+			</article>
+			<article id="storage">
+				<h2 class="sr-only">Storage Info</h2>
+				<p>You’ve used <b>815 GB</b> of your storage</p>
+				<div id="storage-indicator">
+					<div id="shell-bar">
+						<div id="content-bar">
+							<div id="circle"></div>
+						</div>
+					</div>
+					<div id="indicator-text">
+						<span>0 GB</span>
+						<span>1000 GB</span>
+					</div>
+				</div>
+				<div id="bubble">
+					<span id="number">185</span>
+					<span id="left">GB left</span></div>
+			</article>
+		</main>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<footer class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="https://github.com/vietan0" target="_blank">Viet An</a>.
+		</footer>
+	</body>
 </html>
